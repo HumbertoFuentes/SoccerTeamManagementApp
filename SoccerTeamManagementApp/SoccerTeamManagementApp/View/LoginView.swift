@@ -55,7 +55,11 @@ struct LoginView: View {
                     //we need to validate user information
                     if email == "" || password == "" {
                         //one of the fields is empty
-                        
+                        Text("Please fill all textfields")
+                            
+                    }
+                    else {
+                        //proceed to login user
                     }
                 }))
             }
