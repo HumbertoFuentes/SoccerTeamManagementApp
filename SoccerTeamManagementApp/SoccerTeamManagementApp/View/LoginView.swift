@@ -17,7 +17,7 @@ struct LoginView: View {
     @State var email = ""
     @State var password = ""
     
-    var body: some View {
+    var notLoggedInScreen : some View {
         ZStack {
             //background
             LinearGradient(gradient: Gradient(colors: [.blue, .white, .green]), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
@@ -62,7 +62,7 @@ struct LoginView: View {
                     //login user
                     teamManagementVM.login(email: email, password: password)
                     
-                    //we need to create a function after fetching user from firebase that makes sure 
+                    //we need to create a function after fetching user from firebase that makes sure
                 }))
                 
             
@@ -70,5 +70,18 @@ struct LoginView: View {
             
             
         }
+    }
+    
+    var body: some View {
+        
+        if Auth.auth().currentUser != nil {
+            //user is still logged in from previous session
+            HomeView(teamManagementVM: teamManagementVM)
+        }
+        else {
+            //we want to show the log in view
+            notLoggedInScreen
+        }
+        
     }
 }
