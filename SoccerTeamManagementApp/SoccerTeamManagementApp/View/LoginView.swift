@@ -7,8 +7,12 @@
 
 import Foundation
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
+    
+    //view model passed from inital view
+    @ObservedObject var teamManagementVM : TeamManagementViewModel
     
     @State var email = ""
     @State var password = ""
@@ -29,6 +33,7 @@ struct LoginView: View {
                     .frame(maxWidth: .infinity)
                     .cornerRadius(10)
                     .padding(.horizontal)
+                    .textInputAutocapitalization(.never)
                 
                 TextField("Password", text: $password)
                     .foregroundColor(.gray)
@@ -39,8 +44,9 @@ struct LoginView: View {
                     .frame(maxWidth: .infinity)
                     .cornerRadius(10)
                     .padding(.horizontal)
+                    .textInputAutocapitalization(.never)
                 
-                NavigationLink(destination: HomeView(), label: {
+                NavigationLink(destination: HomeView(teamManagementVM: teamManagementVM), label: {
                     Text("Sign in")
                         .padding(.vertical)
                         .foregroundColor(.white)
@@ -49,19 +55,17 @@ struct LoginView: View {
                         .background(.blue)
                         .cornerRadius(10)
                 })
+                .disabled(email.isEmpty || password.isEmpty)
                 .padding(.horizontal)
                 .padding(.top)
                 .simultaneousGesture(TapGesture().onEnded({
-                    //we need to validate user information
-                    if email == "" || password == "" {
-                        //one of the fields is empty
-                        Text("Please fill all textfields")
-                            
-                    }
-                    else {
-                        //proceed to login user
-                    }
+                    //login user
+                    teamManagementVM.login(email: email, password: password)
+                    
+                    //we need to create a function after fetching user from firebase that makes sure 
                 }))
+                
+            
             }
             
             

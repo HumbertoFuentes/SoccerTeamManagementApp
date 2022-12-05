@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0D5B60293E7FE800072532 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5B5F293E7FE800072532 /* User.swift */; };
+		4F0D5B62293E80A500072532 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5B61293E80A500072532 /* Player.swift */; };
+		4F0D5B64293E818F00072532 /* TeamManagementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5B63293E818F00072532 /* TeamManagementViewModel.swift */; };
 		4F95001E293C260B00C3BC6C /* SoccerTeamManagementAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95001D293C260B00C3BC6C /* SoccerTeamManagementAppApp.swift */; };
 		4F950020293C260B00C3BC6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95001F293C260B00C3BC6C /* ContentView.swift */; };
 		4F950022293C260C00C3BC6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F950021293C260C00C3BC6C /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0D5B5F293E7FE800072532 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F0D5B61293E80A500072532 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4F0D5B63293E818F00072532 /* TeamManagementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagementViewModel.swift; sourceTree = "<group>"; };
 		4F95001A293C260B00C3BC6C /* SoccerTeamManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerTeamManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F95001D293C260B00C3BC6C /* SoccerTeamManagementAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerTeamManagementAppApp.swift; sourceTree = "<group>"; };
 		4F95001F293C260B00C3BC6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 		4F95002C293C2B0400C3BC6C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4F0D5B63293E818F00072532 /* TeamManagementViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -115,6 +122,8 @@
 		4F95002D293C2B0E00C3BC6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F0D5B5F293E7FE800072532 /* User.swift */,
+				4F0D5B61293E80A500072532 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0D5B64293E818F00072532 /* TeamManagementViewModel.swift in Sources */,
+				4F0D5B62293E80A500072532 /* Player.swift in Sources */,
 				4F95002F293C2B3A00C3BC6C /* InitialView.swift in Sources */,
 				4F950033293C2F2A00C3BC6C /* RegisterView.swift in Sources */,
 				4F950020293C260B00C3BC6C /* ContentView.swift in Sources */,
@@ -213,6 +224,7 @@
 				4F950039293C31CD00C3BC6C /* RosterView.swift in Sources */,
 				4F950037293C31AC00C3BC6C /* ProfileView.swift in Sources */,
 				4F95001E293C260B00C3BC6C /* SoccerTeamManagementAppApp.swift in Sources */,
+				4F0D5B60293E7FE800072532 /* User.swift in Sources */,
 				4F95003B293C3EC900C3BC6C /* ManagementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

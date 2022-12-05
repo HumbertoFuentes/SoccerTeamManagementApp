@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 
 struct InitialView: View {
+    
+    //view model
+    @StateObject var teamManagementVM : TeamManagementViewModel = TeamManagementViewModel()
+    
     var body: some View {
        
         NavigationView {
@@ -18,7 +22,7 @@ struct InitialView: View {
                 
                 //rest of content
                 VStack {
-                    NavigationLink(destination: LoginView(), label: {
+                    NavigationLink(destination: LoginView(teamManagementVM: teamManagementVM), label: {
                         Text("Login")
                             .padding(.vertical)
                             .foregroundColor(.white)
@@ -29,7 +33,7 @@ struct InitialView: View {
                     })
                     .padding(.horizontal)
                     
-                    NavigationLink(destination: RegisterView(), label: {
+                    NavigationLink(destination: RegisterView(teamManagementVM: teamManagementVM), label: {
                         Text("Register")
                             .padding(.vertical)
                             .foregroundColor(.white)
