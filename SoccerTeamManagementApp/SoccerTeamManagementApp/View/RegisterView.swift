@@ -23,14 +23,53 @@ struct RegisterView: View {
             VStack {
                 //content
                 TextField("Username", text: $username)
+                    .foregroundColor(.gray)
+                    .font(.headline)
+                    .padding(.vertical)
+                    .padding(.leading)
+                    .background(.white)
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(10)
+                    .padding(.horizontal)
                 TextField("Email", text: $email)
+                    .foregroundColor(.gray)
+                    .font(.headline)
+                    .padding(.vertical)
+                    .padding(.leading)
+                    .background(.white)
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(10)
+                    .padding(.horizontal)
                 TextField("Password", text: $password)
+                    .foregroundColor(.gray)
+                    .font(.headline)
+                    .padding(.vertical)
+                    .padding(.leading)
+                    .background(.white)
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(10)
+                    .padding(.horizontal)
                 TextField("Confirm Password", text: $confirmPassword)
+                    .foregroundColor(.gray)
+                    .font(.headline)
+                    .padding(.vertical)
+                    .padding(.leading)
+                    .background(.white)
+                    .frame(maxWidth: .infinity)
+                    .cornerRadius(10)
+                    .padding(.horizontal)
                 
-                //validate textfield information
-                if email != "" && password != "" && username != "" && confirmPassword != "" {
-                    //we know fields arent an empty string
-                }
+                //submit button
+                NavigationLink(destination: HomeView(), label: {
+                    Text("Create Account")
+                        .padding(.vertical)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .font(.headline)
+                        .background(.blue)
+                        .cornerRadius(10)
+                })
+                .padding(.horizontal)
             }
             
         }
