@@ -24,6 +24,7 @@
 		4F950044293D01A700C3BC6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F950043293D01A700C3BC6C /* GoogleService-Info.plist */; };
 		4F950047293D037D00C3BC6C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4F950046293D037D00C3BC6C /* FirebaseAuth */; };
 		4F950049293D037D00C3BC6C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F950048293D037D00C3BC6C /* FirebaseFirestore */; };
+		4FD12FF0293E9EBD00DF646F /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD12FEF293E9EBD00DF646F /* AddPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		4F950038293C31CD00C3BC6C /* RosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterView.swift; sourceTree = "<group>"; };
 		4F95003A293C3EC900C3BC6C /* ManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementView.swift; sourceTree = "<group>"; };
 		4F950043293D01A700C3BC6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4FD12FEF293E9EBD00DF646F /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				4F950036293C31AC00C3BC6C /* ProfileView.swift */,
 				4F950038293C31CD00C3BC6C /* RosterView.swift */,
 				4F95003A293C3EC900C3BC6C /* ManagementView.swift */,
+				4FD12FEF293E9EBD00DF646F /* AddPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				4F950037293C31AC00C3BC6C /* ProfileView.swift in Sources */,
 				4F95001E293C260B00C3BC6C /* SoccerTeamManagementAppApp.swift in Sources */,
 				4F0D5B60293E7FE800072532 /* User.swift in Sources */,
+				4FD12FF0293E9EBD00DF646F /* AddPlayerView.swift in Sources */,
 				4F95003B293C3EC900C3BC6C /* ManagementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

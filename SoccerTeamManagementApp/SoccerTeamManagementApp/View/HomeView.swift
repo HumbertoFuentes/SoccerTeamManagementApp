@@ -21,7 +21,7 @@ struct HomeView: View {
                     .tabItem({
                         Image(systemName: "clipboard.fill")
                     })
-                RosterView()
+                RosterView(teamManagementVM: teamManagementVM)
                     .tabItem({
                         Image(systemName: "person.3.fill")
                     })
